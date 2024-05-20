@@ -4,6 +4,7 @@
 
 @section('content')
 <section>
+    @include ('partials.jumbotron')
     <h1>Home page</h1>
 </section>
 
