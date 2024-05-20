@@ -44,10 +44,11 @@ header {
         width: 100%;
         height: 450px;
         position: relative;
+
         
     button {
         background-color: $primary;
-        color: white;
+        color: $bg-white;
         text-decoration: none;
         font-weight: 600;
         padding: 10px 20px;
@@ -56,35 +57,81 @@ header {
         bottom: -20px;
         border: 3px solid $primary;
         font-weight: bolder;
+        
 
         &:hover {
-            background-color: white;
+            background-color: $bg-white;
             color: $primary;
             border: 3px solid $primary;
             transform: scale(1.1);
             transition: 0.5s;
         }
         }
-}
+    }
+
 main {
     background-color: black;
-    padding: 30px;
     .container{
-        color: white;
+        color: $bg-white;
     }
 }
 
 .mycard{
     border: none;
     cursor: pointer;
+    position: relative;
     &:hover {
       box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.787);
     }
     img{
+        
         height: 15em;
+        object-fit: fill;
+        
     };
     h5{
-        color: white;
+        color: $bg-white;
         text-transform: uppercase;
     }
 } 
+.button-main{
+    background-color: $primary;
+    color: $bg-white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 3px solid $primary;
+    font-weight: bolder;
+    &:hover {
+        background-color: $bg-white;
+        color: $primary;
+        border: 3px solid $primary;
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    }
+
+#footer-top{
+    background-color: #0282F9;
+    
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+            li{
+                padding: 20px 15px;
+                img{
+                    width: 4em;
+                    margin-right: 10px;
+                };
+                p{
+                    display: inline;
+                    text-transform: uppercase;
+                    color: white;
+                }
+            }
+    }
+}
+    
